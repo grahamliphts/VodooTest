@@ -1,0 +1,63 @@
+\hypertarget{class_mixpannel___helper}{}\section{Mixpannel\+\_\+\+Helper Class Reference}
+\label{class_mixpannel___helper}\index{Mixpannel\+\_\+\+Helper@{Mixpannel\+\_\+\+Helper}}
+
+
+The \mbox{\hyperlink{class_mixpannel___helper}{Mixpannel\+\_\+\+Helper}} is dedicated to simplification of Mixpanel tool integration.  
+
+
+
+
+Inherits Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mixpannel___helper_a0d516d08396ffd740dd7805e1644c458}{Game\+Played\+Event}} (int score)
+\begin{DoxyCompactList}\small\item\em This function handle game\+Played event sending to Mixpanel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mixpannel___helper_a6deb2506716775a1828fd4cff1ffa6b7}{Game\+Launched\+Event}} ()
+\begin{DoxyCompactList}\small\item\em This function is called at the very beggining of the game and hande the game\+Launched event sending. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_mixpannel___helper}{Mixpannel\+\_\+\+Helper}} is dedicated to simplification of Mixpanel tool integration. 
+
+It Handle a generic implementation of launch counter, first launch event and party counter it also simplify Game\+Played and app\+Launched event sending by reduce the integration to only two calls void \mbox{\hyperlink{class_mixpannel___helper_a0d516d08396ffd740dd7805e1644c458}{Game\+Played\+Event(int score)}} and void \mbox{\hyperlink{class_mixpannel___helper_a6deb2506716775a1828fd4cff1ffa6b7}{Game\+Launched\+Event()}} nothing more have to be written by game\+Devs. 
+\begin{DoxyParams}{Parameters}
+{\em App\+Name,App} & descriptor for Mixpanel UI and sort options \\
+\hline
+{\em verbose,usefull} & for event debugging \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mixpannel___helper_a6deb2506716775a1828fd4cff1ffa6b7}\label{class_mixpannel___helper_a6deb2506716775a1828fd4cff1ffa6b7}} 
+\index{Mixpannel\+\_\+\+Helper@{Mixpannel\+\_\+\+Helper}!Game\+Launched\+Event@{Game\+Launched\+Event}}
+\index{Game\+Launched\+Event@{Game\+Launched\+Event}!Mixpannel\+\_\+\+Helper@{Mixpannel\+\_\+\+Helper}}
+\subsubsection{\texorpdfstring{Game\+Launched\+Event()}{GameLaunchedEvent()}}
+{\footnotesize\ttfamily void Mixpannel\+\_\+\+Helper.\+Game\+Launched\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is called at the very beggining of the game and hande the game\+Launched event sending. 
+
+the First\+Launched and the launch\+Count parameters are managed internaly and so game\+Dev don\textquotesingle{}t ask to waste time with it \mbox{\Hypertarget{class_mixpannel___helper_a0d516d08396ffd740dd7805e1644c458}\label{class_mixpannel___helper_a0d516d08396ffd740dd7805e1644c458}} 
+\index{Mixpannel\+\_\+\+Helper@{Mixpannel\+\_\+\+Helper}!Game\+Played\+Event@{Game\+Played\+Event}}
+\index{Game\+Played\+Event@{Game\+Played\+Event}!Mixpannel\+\_\+\+Helper@{Mixpannel\+\_\+\+Helper}}
+\subsubsection{\texorpdfstring{Game\+Played\+Event()}{GamePlayedEvent()}}
+{\footnotesize\ttfamily void Mixpannel\+\_\+\+Helper.\+Game\+Played\+Event (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+This function handle game\+Played event sending to Mixpanel. 
+
+it also manage game counting for the current session to simplify implementation to game\+Dev 
+\begin{DoxyParams}{Parameters}
+{\em score} & last played round score \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Voodoo Test/\+Elements/\+Exercice 2/\+Mixpanel Intergration/\+Assets/\+Scripts/\mbox{\hyperlink{_mixpannel___helper_8cs}{Mixpannel\+\_\+\+Helper.\+cs}}\end{DoxyCompactItemize}
